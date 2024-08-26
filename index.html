@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>چت تصویری رندوم</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <video id="localVideo" autoplay muted></video>
+            <video id="remoteVideo" autoplay></video>
+        </div>
+        <button id="startButton">شروع چت</button>
+        
+        <div class="signal-container">
+            <textarea id="signalData" readonly placeholder="کد سیگنالینگ شما اینجا ظاهر می‌شود"></textarea>
+            <button id="copyButton">کپی کد سیگنالینگ</button>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="signalInput" placeholder="کد سیگنالینگ دریافتی را وارد کنید">
+            <button id="submitSignalButton">ارسال کد سیگنالینگ</button>
+        </div>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
